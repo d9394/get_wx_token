@@ -10,7 +10,7 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 #如果不使用proxy,可以去掉以下内容
-proxy_handler = urllib2.ProxyHandler({"http" : "http://192.168.10.17:8080"})
+proxy_handler = urllib2.ProxyHandler({"https" : "http://192.168.10.17:8080"})
 opener = urllib2.build_opener(proxy_handler)
 urllib2.install_opener(opener)
 
